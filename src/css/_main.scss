@@ -21,22 +21,29 @@
         color: #fff;
         font-size: larger;
         text-decoration: none;
-        padding: 18px 22px;
-        position: fixed;
-        right: 0;
+        padding: 15px 22px;
+        position: absolute;
+        z-index: 1;
+        right: 28px;
+        top: 23px;
     };
 }
 .header__picture{
     width: 1170px;
     height: 550px;
-    @media (min-width: 100px)and(max-width: 767px){
-        width: 320px;
-        height: 150px;
-    };
+    
     @media (min-width: 768)and(max-width: 1199px) {
         width: 768px;
         height: 361px;
-    }
+    };
+    @media (min-width: 100px)and(max-width: 768px){
+        position: absolute;
+        z-index: 0;
+        top: 100px;
+        width: 320px;
+        height: 150px;
+    };
+    
 }
 
 .nav__list{
@@ -51,8 +58,9 @@
         width: 182px;
         height: 208px;
         position: absolute;
-        right: 0;
-        top: 55px;
+        right: 14px;
+        top: 73px;
+        z-index: 1;
         display: none;
         flex-direction: column;
         background-color: $menu-small-background;
@@ -63,9 +71,12 @@
     
 }
 .list__element{
-    margin-left: 34px;
-    transition: background-color .3s cubic-bezier();
+    padding-left: 13px;
+    transition: background-color .3s ease-in-out;
     @media (max-width: 768px){
+        width: 169px;
+        height: 32px;
+        padding-top: 6px;
         &:hover{
             background-color: $hover-menu;
         }
@@ -85,6 +96,9 @@
 .recent-posts{
     margin-top: 66px;
     padding-bottom: 35px;
+    @media (max-width: 768px){
+        margin-top: 230px;
+    };
 }
 .section-heading{
     font-family: $roboto;
