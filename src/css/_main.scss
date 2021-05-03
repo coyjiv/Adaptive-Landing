@@ -6,26 +6,27 @@
     width: 1170px;
     margin: 0px auto;
     @media (max-width: 1199px) {
-        width: 768px;
+        width: 596px;
     }
     @media (max-width: 768px){
-        width: 320px;
+        width: 264px;
+        position: relative;
     };
 }
 .btn-menu-link{
     display: none;
+    background-color: #000;
+    width: fit-content;
+    color: #fff;
+    font-size: larger;
+    text-decoration: none;
+    padding: 15px 22px;
+    margin-left: 258px;
+    position: relative;
     @media (max-width: 768px){
         display: block;
-        background-color: #000;
-        width: fit-content;
-        color: #fff;
-        font-size: larger;
-        text-decoration: none;
-        padding: 15px 22px;
-        position: absolute;
-        z-index: 1;
-        right: 28px;
-        top: 23px;
+        margin-top: 23px;
+        margin-bottom: 23px;
     };
 }
 .header__picture{
@@ -37,9 +38,6 @@
         height: 361px;
     };
     @media (min-width: 100px)and(max-width: 768px){
-        position: absolute;
-        z-index: 0;
-        top: 100px;
         width: 320px;
         height: 150px;
     };
@@ -58,8 +56,7 @@
         width: 182px;
         height: 208px;
         position: absolute;
-        right: 14px;
-        top: 73px;
+        right: -57px;
         z-index: 1;
         display: none;
         flex-direction: column;
@@ -94,10 +91,10 @@
     color: $selected;
 }
 .recent-posts{
-    margin-top: 66px;
+    margin-top: 38px;
     padding-bottom: 35px;
     @media (max-width: 768px){
-        margin-top: 230px;
+        margin-top: 38px;
     };
 }
 .section-heading{
@@ -157,6 +154,7 @@
     margin-left: 21px;
     @media (max-width:768px){
         margin: 0;
+        width: 262px;
     }
 }
 .post-heading{
@@ -199,7 +197,6 @@
 //     justify-content: space-around;
 // }
 .page-footer{
-    height: 355px;
     background-color: #000;
     display: flex;
     justify-content: center;
@@ -213,6 +210,10 @@
 .white{
     color: $white-font;
     text-align: center;
+    margin-top: 68px;
+    @media (max-width: 768px){
+        margin-top: 38px;
+    }
 }
 .footer-text,.copy{
     text-align: center;
@@ -241,4 +242,8 @@
 }
 .copy{
     margin-top: 34px;
+    padding-bottom: 70px;
+    @media (max-width: 768px){
+        line-height: 24px;
+    }
 }
